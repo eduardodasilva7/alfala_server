@@ -1,0 +1,16 @@
+{
+  "name": "alfa_server",
+  "version": "1.0.0",
+  "description": "Este será o servido do projeto Alfala Books",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Eduardo Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

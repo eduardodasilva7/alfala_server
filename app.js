@@ -1,12 +1,14 @@
-import express from 'express'
+import express from 'express';
+import routerLivros from './routes/livrosRouter.js'
 
 const app = express()
+app.use(express.json())
+
 const port = 8000
 
-app.get('/', (req, res) => {
-    res.send('Eduardo Silva!')
-})
+// Montagem do roteador "livros"
+app.use('/livros', routerLivros);
 
 app.listen(port, () => {
-    console.log(`Escutando na porta ${port}`)
+  console.log(`Escutando a porta ${port}`)
 })
